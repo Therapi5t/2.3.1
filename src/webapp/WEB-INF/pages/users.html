@@ -23,13 +23,13 @@
     <td th:text="${user.age}"></td>
     <td th:text="${user.email}"></td>
     <td>
-      <a th:href="@{'/update/'+${user.id}}">edit</a>
-      <a th:href="@{'/delete/'+${user.id}}">delete</a>
+      <a th:href="@{'/users/'+${user.id}}">edit</a>
+      <a th:href="@{'/users/'+${user.id}}">delete</a>
     </td>
   </tr>
   </tbody>
 </table>
 <h2>Add user</h2>
-<a th:href="@{'/add'}">Add new user</a>
+<a th:href="@{'/users/add'}">Add new user</a>
 </body>
 </html>
